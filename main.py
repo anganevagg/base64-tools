@@ -35,14 +35,15 @@ def decodeFile(filename):
 			for i in range(len(lines)):
 				fileobj2.write(decode(lines[i]))
 
-if(len(sys.argv)==1):
-	print(__doc__.strip())
-else:
-	if(sys.argv[1]=="-e"):
-		print(encode(sys.argv[2]))
-	elif(sys.argv[1]=="-d"):
-		print(decode(sys.argv[2]))
-	elif(sys.argv[1]=="-ef"):
-		encodeFile(sys.argv[2])
-	elif(sys.argv[1]=="-df"):
-		decodeFile(sys.argv[2])
+if __name__ == '__main__':
+	if(len(sys.argv)==1):
+		print(__doc__.strip())
+	else:
+		if(sys.argv[1]=="-e"):
+			print(encode(sys.argv[2]))
+		elif(sys.argv[1]=="-d"):
+			print(decode(sys.argv[2]))
+		elif(sys.argv[1]=="-ef"):
+			encodeFile(sys.argv[2])
+		elif(sys.argv[1]=="-df"):
+			decodeFile(sys.argv[2])
