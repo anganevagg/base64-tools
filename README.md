@@ -2,7 +2,7 @@
 Un programa con los complementos de cifrar y descifrar archivos y strings en base64
 
 ```sh
-usage base64-tools <command> <extras><b
+usage base64-tools <command> <extras>
 
 comands:
 -e <string> - encode string
