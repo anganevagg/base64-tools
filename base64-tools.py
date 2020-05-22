@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 usage base64-tools <command> <extras>
 
