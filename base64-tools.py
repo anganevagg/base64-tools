@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-usage base64-tools <command> <extras>
+usage:
+base64-tools <command> <extras>
 
 comands:
 -e <string> - encode string
